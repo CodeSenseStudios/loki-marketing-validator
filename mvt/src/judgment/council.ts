@@ -18,7 +18,12 @@ export async function runCouncil(): Promise<{ verdict: CouncilVote; members: Cou
 
   const marketVote: CouncilVote = signups >= 10 || avgScore >= 3.5 ? 'GO' : 'CONDITIONAL';
   const financeVote: CouncilVote = spend <= 500 ? 'GO' : 'CONDITIONAL';
-  const devilVote: CouncilVote = signups < 5 && avgScore < 3 ? 'NO-GO' : 'CONDITIONAL';
+  const devilVote: CouncilVote =
+    signups < 5 && avgScore < 3
+      ? 'NO-GO'
+      : signups >= 10 && avgScore >= 3.5
+        ? 'GO'
+        : 'CONDITIONAL';
 
   const members: CouncilMemberResult[] = [
     {

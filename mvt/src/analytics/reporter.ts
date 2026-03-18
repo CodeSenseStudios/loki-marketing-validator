@@ -24,7 +24,8 @@ export async function generateDailyReport(day = 1): Promise<DailyMetrics> {
   const averageInterviewScore = data.interviews.length
     ? data.interviews.reduce((sum, row) => sum + Number(row.score ?? 0), 0) / data.interviews.length
     : 0;
-  const signupsToday = totalSignups;
+  const todayPrefix = new Date().toISOString().slice(0, 10);
+  const signupsToday = data.signups.filter((row) => (row.timestamp ?? '').startsWith(todayPrefix)).length;
   const conversionRate = sessions > 0 ? totalSignups / sessions : 0;
   const cac = totalSignups > 0 ? spend / totalSignups : spend;
 

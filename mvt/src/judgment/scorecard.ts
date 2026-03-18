@@ -11,7 +11,7 @@ export async function generateScorecard(): Promise<string> {
   const spend = Number(summary.match(/Spend: \$(\d+(?:\.\d+)?)/)?.[1] ?? 0);
   const avgScore = Number(summary.match(/Average interview score: (\d+(?:\.\d+)?)/)?.[1] ?? 0);
   const openRate = 0;
-  const referralRate = signups > 0 ? 0 : 0;
+  const referralRate = 0;
   const verdict = council.verdict;
   const scorecard = `# Go/No-Go Scorecard
 

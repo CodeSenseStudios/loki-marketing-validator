@@ -21,7 +21,7 @@ test('analytics reports and status handle local data', async () => {
   await fs.writeFile(path.join(dataDir, 'interviews.json'), JSON.stringify([{ date: '2026-03-17', score: 4, would_pay: true }], null, 2), 'utf8');
   const collected = await collectAnalyticsData();
   const metrics = await generateDailyReport(1);
-  const status = evaluateExperimentStatus(metrics, 1);
+  const status = await evaluateExperimentStatus(metrics, 1);
   assert.equal(collected.signups.length, 1);
   assert.equal(status.status, 'running');
 });

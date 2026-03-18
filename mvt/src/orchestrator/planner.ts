@@ -32,7 +32,7 @@ export async function orchestrate(brief: ExperimentBrief): Promise<void> {
 
   await updatePhase('EXPERIMENT');
   const metrics = await generateDailyReport(1);
-  const experimentStatus = evaluateExperimentStatus(metrics, 1);
+  const experimentStatus = await evaluateExperimentStatus(metrics, 1);
   await persistExperimentStatus(experimentStatus);
   await generateCumulativeReport();
 

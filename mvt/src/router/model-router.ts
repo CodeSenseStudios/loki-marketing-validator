@@ -124,11 +124,19 @@ export class ModelRouter {
   }
 }
 
+function getAnthropicPricing(model: string): { input: number; output: number } {
+  if (model.includes('haiku')) {
+    return { input: 0.25 / 1_000_000, output: 1.25 / 1_000_000 };
+  }
+  return { input: 3 / 1_000_000, output: 15 / 1_000_000 };
+}
+
 function estimateCallCost(model: string, request: ModelCall): number {
   const inputTokens = estimateTokens(`${request.system_prompt}\n${request.user_prompt}`);
   const outputTokens = request.max_tokens ?? 1200;
   if (model.startsWith('gpt')) {
     return inputTokens * (0.15 / 1_000_000) + outputTokens * (0.6 / 1_000_000);
   }
-  return inputTokens * (3 / 1_000_000) + outputTokens * (15 / 1_000_000);
+  const pricing = getAnthropicPricing(model);
+  return inputTokens * pricing.input + outputTokens * pricing.output;
 }

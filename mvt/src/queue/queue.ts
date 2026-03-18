@@ -33,7 +33,7 @@ export async function claimTask(agentType: string): Promise<Task | null> {
     const eligible: Task[] = [];
     for (const task of tasks) {
       const dependencyStatus = await getDependencyStatus(task.id);
-      if (task.type !== agentType && task.assigned_agent && task.assigned_agent !== agentType) {
+      if (task.type !== agentType && task.assigned_agent !== agentType) {
         continue;
       }
       if (!dependencyStatus.ready) {
@@ -133,6 +133,15 @@ export async function listBucketTasks(bucket: string): Promise<Task[]> {
     tasks.push(await readJsonFile<Task>(path.join(dir, entry)));
   }
   return tasks;
+}
+
+export async function claimSpecificTask(taskId: string): Promise<Task> {
+  const task = await getTaskStatus(taskId);
+  task.status = 'in-progress';
+  task.started_at = nowIso();
+  await moveTask(task, 'pending', 'in-progress');
+  await updateStatusFile(`CLAIMED:${task.assigned_agent ?? task.type}`, [task.assigned_agent ?? task.type]);
+  return task;
 }
 
 export async function releaseStaleLocks(maxAgeMs = 5 * 60 * 1000): Promise<string[]> {

@@ -52,7 +52,7 @@ async function main(argv: string[]): Promise<void> {
 
   if (command === 'report') {
     const metrics = await generateDailyReport(1);
-    const status = evaluateExperimentStatus(metrics, 1);
+    const status = await evaluateExperimentStatus(metrics, 1);
     await persistExperimentStatus(status);
     console.log(JSON.stringify(status, null, 2));
     return;

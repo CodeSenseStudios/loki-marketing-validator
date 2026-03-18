@@ -2,20 +2,25 @@
 import { readJsonFile, writeJsonFile } from '../utils/fs.ts';
 import { STATE_ROOT } from '../utils/paths.ts';
 import type { ExperimentStatus } from '../types.ts';
-import { DEFAULT_CONFIG } from '../utils/config.ts';
+import { DEFAULT_CONFIG, loadJsonYaml, type MvtConfig } from '../utils/config.ts';
 import type { DailyMetrics } from './reporter.ts';
 
-export function evaluateExperimentStatus(metrics: DailyMetrics, day = 1): ExperimentStatus {
-  const targetSignups = DEFAULT_CONFIG.experiment.min_signups_for_go;
+async function loadConfig(): Promise<MvtConfig> {
+  return loadJsonYaml<MvtConfig>(path.join(STATE_ROOT, 'config', 'config.yaml'), DEFAULT_CONFIG);
+}
+
+export async function evaluateExperimentStatus(metrics: DailyMetrics, day = 1): Promise<ExperimentStatus> {
+  const config = await loadConfig();
+  const targetSignups = config.experiment.min_signups_for_go;
   const status: ExperimentStatus = {
     day,
-    total_days: DEFAULT_CONFIG.experiment.duration_days,
+    total_days: config.experiment.duration_days,
     signups: metrics.totalSignups,
     target_signups: targetSignups,
     cac: metrics.cac,
-    target_cac: DEFAULT_CONFIG.experiment.target_cac,
+    target_cac: config.experiment.target_cac,
     budget_spent: metrics.spend,
-    budget_total: DEFAULT_CONFIG.experiment.budget_usd,
+    budget_total: config.experiment.budget_usd,
     interview_score: metrics.averageInterviewScore,
     status: 'running',
     recommendation: 'Continue collecting demand signals.'

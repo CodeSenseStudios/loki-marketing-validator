@@ -1,6 +1,6 @@
 ﻿import path from 'node:path';
 import type { CreateTaskInput } from '../queue/task.ts';
-import { claimTask, completeTask, createTask } from '../queue/queue.ts';
+import { claimSpecificTask, completeTask, createTask } from '../queue/queue.ts';
 import { RarvEngine } from '../engine/rarv.ts';
 import { AGENT_EXECUTORS } from '../agents/executors.ts';
 import { STATE_ROOT } from '../utils/paths.ts';
@@ -9,10 +9,7 @@ const engine = new RarvEngine(undefined, AGENT_EXECUTORS);
 
 export async function runAgentTask(input: CreateTaskInput): Promise<void> {
   const task = await createTask(input);
-  const claimed = await claimTask(input.type);
-  if (!claimed) {
-    throw new Error(`Unable to claim a task for ${input.type}`);
-  }
+  const claimed = await claimSpecificTask(task.id);
   const result = await engine.run({
     agent_type: input.type,
     task_id: claimed.id,
