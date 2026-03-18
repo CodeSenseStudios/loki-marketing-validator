@@ -1,0 +1,30 @@
+{
+  "id": "task-34fe76a7-8f6e-458d-962e-66d6734255c6",
+  "type": "reddit-builder",
+  "swarm": "outbound-validation",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "reddit-builder",
+  "model_tier": "content",
+  "title": "Create Reddit plan",
+  "description": "Produce subreddit plan and authentic drafts.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\reddit-plan.md"
+  ],
+  "acceptance_criteria": [
+    "reddit-plan.md includes subreddits, post drafts, and engagement rules"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:28.753Z",
+  "started_at": "2026-03-17T19:11:28.783Z",
+  "completed_at": "2026-03-17T19:11:28.881Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

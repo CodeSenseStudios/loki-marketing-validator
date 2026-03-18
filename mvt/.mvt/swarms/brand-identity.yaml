@@ -1,0 +1,16 @@
+{
+  "name": "brand-identity",
+  "phase": 1,
+  "agents": [
+    "brand-guardian",
+    "ui-designer",
+    "ux-researcher"
+  ],
+  "dependencies": [],
+  "parallel": true,
+  "completion_criteria": [
+    "BRAND.md exists",
+    "page-spec.md exists",
+    "personas.md exists"
+  ]
+}

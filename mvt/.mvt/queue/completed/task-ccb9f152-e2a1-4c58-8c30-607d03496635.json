@@ -1,0 +1,31 @@
+{
+  "id": "task-ccb9f152-e2a1-4c58-8c30-607d03496635",
+  "type": "brand-guardian",
+  "swarm": "brand-identity",
+  "phase": 1,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "brand-guardian",
+  "model_tier": "strategy",
+  "title": "Create brand system",
+  "description": "Produce BRAND.md from the experiment brief.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\brand\\BRAND.md"
+  ],
+  "acceptance_criteria": [
+    "BRAND.md contains all required sections",
+    "Color palette uses concrete hex values"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:26.625Z",
+  "started_at": "2026-03-17T19:11:26.657Z",
+  "completed_at": "2026-03-17T19:11:26.762Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

@@ -1,0 +1,30 @@
+{
+  "id": "task-005acd13-40a4-4bbc-9a0f-ee47cc14caaf",
+  "type": "paid-social-strategist",
+  "swarm": "paid-acquisition",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "paid-social-strategist",
+  "model_tier": "strategy",
+  "title": "Create social ads plan",
+  "description": "Score channels and define targeting.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\ads\\social-plan.md"
+  ],
+  "acceptance_criteria": [
+    "social-plan.md includes a scored platform matrix"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:27.829Z",
+  "started_at": "2026-03-17T19:11:27.865Z",
+  "completed_at": "2026-03-17T19:11:27.951Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

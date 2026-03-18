@@ -1,0 +1,30 @@
+{
+  "id": "task-50391ec7-55f7-48d6-923a-7dbdb852a1cf",
+  "type": "tracking-specialist",
+  "swarm": "paid-acquisition",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "tracking-specialist",
+  "model_tier": "data",
+  "title": "Create tracking plan",
+  "description": "Define GTM, GA4, and conversion events.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\ads\\tracking-plan.md"
+  ],
+  "acceptance_criteria": [
+    "tracking-plan.md includes GTM, GA4, and UTM sections"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:28.073Z",
+  "started_at": "2026-03-17T19:11:28.102Z",
+  "completed_at": "2026-03-17T19:11:28.209Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

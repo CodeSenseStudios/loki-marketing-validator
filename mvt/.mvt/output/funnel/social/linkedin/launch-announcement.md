@@ -1,0 +1,1 @@
+Building Untitled Opportunity because I am tired of teams confusing enthusiasm with demand. Real signups beat internal opinions. If this problem sounds familiar, join the waitlist. #productstrategy #growth #validation

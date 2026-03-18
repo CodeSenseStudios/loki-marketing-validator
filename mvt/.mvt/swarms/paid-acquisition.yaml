@@ -1,0 +1,19 @@
+{
+  "name": "paid-acquisition",
+  "phase": 2,
+  "agents": [
+    "paid-social-strategist",
+    "ppc-strategist",
+    "ad-creative-strategist",
+    "tracking-specialist"
+  ],
+  "dependencies": [
+    "brand-identity"
+  ],
+  "parallel": true,
+  "completion_criteria": [
+    "google-plan.md exists",
+    "social-plan.md exists",
+    "tracking-plan.md exists"
+  ]
+}

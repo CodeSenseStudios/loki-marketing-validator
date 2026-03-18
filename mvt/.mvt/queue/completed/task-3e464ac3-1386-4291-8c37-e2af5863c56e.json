@@ -1,0 +1,30 @@
+{
+  "id": "task-3e464ac3-1386-4291-8c37-e2af5863c56e",
+  "type": "ui-designer",
+  "swarm": "brand-identity",
+  "phase": 1,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "ui-designer",
+  "model_tier": "strategy",
+  "title": "Create page spec",
+  "description": "Produce page-spec.md from the brand system.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\brand\\page-spec.md"
+  ],
+  "acceptance_criteria": [
+    "page-spec.md includes layout, tokens, and breakpoints"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:26.780Z",
+  "started_at": "2026-03-17T19:11:26.813Z",
+  "completed_at": "2026-03-17T19:11:26.911Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

@@ -1,0 +1,1 @@
+A lot of teams ship before they know if anyone cares. Then they blame the build, not the missing signal. I am working on a better validation loop. #startup #product #marketing

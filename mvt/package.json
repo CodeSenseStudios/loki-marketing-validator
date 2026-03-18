@@ -1,0 +1,25 @@
+{
+  "name": "@loki/mvt",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Marketing Validation Team subproject for Loki Mode",
+  "type": "module",
+  "bin": {
+    "mvt": "./src/cli.ts"
+  },
+  "scripts": {
+    "cli": "node --experimental-strip-types ./src/cli.ts",
+    "run": "node --experimental-strip-types ./src/cli.ts run",
+    "status": "node --experimental-strip-types ./src/cli.ts status",
+    "report": "node --experimental-strip-types ./src/cli.ts report",
+    "verdict": "node --experimental-strip-types ./src/cli.ts verdict",
+    "test": "node --experimental-strip-types --test ./tests/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}

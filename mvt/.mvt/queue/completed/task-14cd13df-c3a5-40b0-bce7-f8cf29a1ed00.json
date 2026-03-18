@@ -1,0 +1,37 @@
+{
+  "id": "task-14cd13df-c3a5-40b0-bce7-f8cf29a1ed00",
+  "type": "content-creator",
+  "swarm": "funnel-content",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "content-creator",
+  "model_tier": "content",
+  "title": "Create landing page and email copy",
+  "description": "Produce landing page copy and email sequence.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\landing-page.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\welcome.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\value-prop.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\social-proof.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\behind-scenes.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\urgency.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\copy\\emails\\survey.md"
+  ],
+  "acceptance_criteria": [
+    "landing-page.md includes three headline variants",
+    "six email files are created"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:27.298Z",
+  "started_at": "2026-03-17T19:11:27.326Z",
+  "completed_at": "2026-03-17T19:11:27.466Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

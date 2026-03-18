@@ -1,0 +1,13 @@
+{
+  "defaults": {
+    "failureThreshold": 5,
+    "cooldownSeconds": 300,
+    "halfOpenAfter": 60
+  },
+  "overrides": {
+    "orch-judge": {
+      "failureThreshold": 2,
+      "cooldownSeconds": 120
+    }
+  }
+}

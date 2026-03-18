@@ -1,0 +1,22 @@
+:root {
+  --bg: #F8FAFC;
+  --text: #0F172A;
+  --primary: #0F766E;
+  --accent: #F97316;
+  --surface: #ffffff;
+}
+body { margin: 0; font-family: 'Source Sans 3', system-ui, sans-serif; background: linear-gradient(180deg, var(--bg), #ffffff); color: var(--text); }
+.page, .thanks-page { max-width: 1080px; margin: 0 auto; padding: 24px; }
+.hero { padding: 72px 0 32px; display: grid; gap: 16px; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.1em; color: var(--primary); font-weight: 700; }
+h1 { font-family: 'Space Grotesk', system-ui, sans-serif; font-size: clamp(2.5rem, 5vw, 4.5rem); line-height: 0.95; margin: 0; }
+.subheadline { font-size: 1.125rem; max-width: 48rem; }
+.signup-card { display: grid; gap: 12px; max-width: 420px; background: var(--surface); padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12); }
+input, button { font: inherit; padding: 14px 16px; border-radius: 10px; border: 1px solid #cbd5e1; }
+button { border: none; background: var(--accent); color: white; font-weight: 700; cursor: pointer; transition: transform 160ms ease; }
+button:hover { transform: translateY(-1px); }
+.value-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 24px 0; }
+.value-grid article { background: var(--surface); padding: 20px; border-radius: 16px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08); }
+.proof, footer { padding: 24px 0; }
+.share-row { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (max-width: 375px) { .page, .thanks-page { padding: 16px; } h1 { font-size: 2.2rem; } }

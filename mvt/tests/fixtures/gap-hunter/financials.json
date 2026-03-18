@@ -1,0 +1,6 @@
+﻿{
+  "target_mrr": 3000,
+  "target_price_point": 30,
+  "cac_budget": 5,
+  "payback_months": 6
+}

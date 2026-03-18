@@ -1,0 +1,34 @@
+{
+  "experiment": {
+    "duration_days": 14,
+    "budget_usd": 500,
+    "min_signups_for_go": 100,
+    "target_cac": 5,
+    "hypothesis": ""
+  },
+  "models": {
+    "orchestrator": "claude-sonnet-4-20250514",
+    "strategy": "claude-sonnet-4-20250514",
+    "content": "claude-haiku-4-5-20251001",
+    "data": "claude-haiku-4-5-20251001",
+    "bulk_copy": "gpt-4o-mini",
+    "judgment": "claude-sonnet-4-20250514"
+  },
+  "providers": {
+    "anthropic": {
+      "api_key": "${ANTHROPIC_API_KEY}"
+    },
+    "openai": {
+      "api_key": "${OPENAI_API_KEY}"
+    }
+  },
+  "retry": {
+    "max_retries": 5,
+    "base_wait_seconds": 30,
+    "max_wait_seconds": 300
+  },
+  "tracking": {
+    "token_budget_warn_pct": 80,
+    "token_budget_hard_limit_usd": 50
+  }
+}

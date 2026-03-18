@@ -1,0 +1,53 @@
+{
+  "opportunity_name": "Signal Pilot",
+  "opportunity_score": 82,
+  "target_industries": [
+    "SaaS",
+    "Growth"
+  ],
+  "target_audience": {
+    "persona": "Founders and GTM leads",
+    "pain_points": [
+      "Pain point: Teams confuse enthusiasm with real demand"
+    ],
+    "current_solutions": [
+      "Current solution: Spreadsheets and ad hoc forms"
+    ],
+    "willingness_to_pay_range": {
+      "min": 15,
+      "max": 45
+    }
+  },
+  "product_name": "Untitled Opportunity",
+  "one_liner": "Signal Pilot helps startup teams validate demand before they build the wrong thing.",
+  "key_features": [
+    "Key feature: Landing page and outreach orchestration",
+    "Key feature: CAC and conversion tracking"
+  ],
+  "differentiators": [
+    "Differentiator: Structured go/no-go scorecard"
+  ],
+  "target_mrr": 3000,
+  "target_price_point": 30,
+  "cac_budget": 5,
+  "payback_months": 6,
+  "competitors": [
+    {
+      "name": "Manual spreadsheet workflow",
+      "positioning": "Do it yourself",
+      "pricing": "$0 plus labor",
+      "weaknesses": [
+        "Slow",
+        "Hard to attribute",
+        "No standardized verdict"
+      ]
+    }
+  ],
+  "experiment_hypothesis": "We believe Founders and GTM leads will sign up for Untitled Opportunity because signal pilot helps startup teams validate demand before they build the wrong thing..",
+  "success_criteria": {
+    "min_signups": 10,
+    "max_cac": 5,
+    "min_conversion_rate": 0.03,
+    "experiment_duration_days": 14
+  }
+}

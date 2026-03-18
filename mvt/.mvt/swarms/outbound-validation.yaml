@@ -1,0 +1,18 @@
+{
+  "name": "outbound-validation",
+  "phase": 2,
+  "agents": [
+    "outbound-strategist",
+    "discovery-coach",
+    "reddit-builder"
+  ],
+  "dependencies": [
+    "brand-identity"
+  ],
+  "parallel": true,
+  "completion_criteria": [
+    "cold-email.md exists",
+    "interview-script.md exists",
+    "reddit-plan.md exists"
+  ]
+}

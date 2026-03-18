@@ -1,0 +1,3 @@
+{
+  "note": "These .yaml files are stored as JSON-compatible YAML to avoid extra parser dependencies."
+}

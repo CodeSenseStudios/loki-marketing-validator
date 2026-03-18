@@ -1,0 +1,31 @@
+{
+  "id": "task-cce97792-c372-4e86-8f13-4ffaf97e3abc",
+  "type": "growth-hacker",
+  "swarm": "funnel-content",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "growth-hacker",
+  "model_tier": "strategy",
+  "title": "Create funnel architecture",
+  "description": "Map funnel stages and validation criteria.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\funnel\\architecture.md"
+  ],
+  "acceptance_criteria": [
+    "architecture.md includes stage metrics",
+    "kill criteria are measurable"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:27.125Z",
+  "started_at": "2026-03-17T19:11:27.159Z",
+  "completed_at": "2026-03-17T19:11:27.278Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

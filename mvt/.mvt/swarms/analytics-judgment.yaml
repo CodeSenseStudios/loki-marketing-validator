@@ -1,0 +1,19 @@
+{
+  "name": "analytics-judgment",
+  "phase": 3,
+  "agents": [
+    "analytics-reporter",
+    "orch-judge",
+    "orch-planner"
+  ],
+  "dependencies": [
+    "funnel-content",
+    "paid-acquisition",
+    "outbound-validation"
+  ],
+  "parallel": false,
+  "completion_criteria": [
+    "experiment-summary.md exists",
+    "scorecard.md exists"
+  ]
+}

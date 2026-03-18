@@ -1,0 +1,1 @@
+Closing the first round of waitlist invites soon. If you want to shape the validation workflow, now is the time. #earlyaccess #productled #experiments

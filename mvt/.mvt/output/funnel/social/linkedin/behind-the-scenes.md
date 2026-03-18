@@ -1,0 +1,1 @@
+Behind the scenes, we are turning market questions into measurable experiments. The goal is a cleaner go/no-go decision. #buildinpublic #gtm #saas

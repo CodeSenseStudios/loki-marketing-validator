@@ -1,0 +1,19 @@
+{
+  "name": "funnel-content",
+  "phase": 2,
+  "agents": [
+    "growth-hacker",
+    "content-creator",
+    "seo-specialist",
+    "linkedin-creator"
+  ],
+  "dependencies": [
+    "brand-identity"
+  ],
+  "parallel": true,
+  "completion_criteria": [
+    "architecture.md exists",
+    "landing-page.md exists",
+    "seo-spec.md exists"
+  ]
+}

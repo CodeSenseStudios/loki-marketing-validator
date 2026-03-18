@@ -1,0 +1,33 @@
+{
+  "id": "task-70a42942-fd0e-4413-a7af-6abca706d0fe",
+  "type": "outbound-strategist",
+  "swarm": "outbound-validation",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "outbound-strategist",
+  "model_tier": "strategy",
+  "title": "Create outbound sequences",
+  "description": "Produce cold email, LinkedIn DM, and targeting assets.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\sequences\\cold-email.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\sequences\\linkedin-dm.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\targeting.md"
+  ],
+  "acceptance_criteria": [
+    "outbound sequence files exist",
+    "targeting.md includes specific ICP criteria"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:28.432Z",
+  "started_at": "2026-03-17T19:11:28.459Z",
+  "completed_at": "2026-03-17T19:11:28.570Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

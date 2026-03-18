@@ -1,0 +1,32 @@
+{
+  "id": "task-e15e4738-2a60-4840-bfd5-1f593a50d559",
+  "type": "ux-researcher",
+  "swarm": "brand-identity",
+  "phase": 1,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "ux-researcher",
+  "model_tier": "content",
+  "title": "Create personas and interview guide",
+  "description": "Produce personas and interview guide.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\brand\\personas.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\interview-guide.md"
+  ],
+  "acceptance_criteria": [
+    "personas.md contains at least two persona cards",
+    "interview-guide.md includes a 15-minute structure"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:26.932Z",
+  "started_at": "2026-03-17T19:11:26.963Z",
+  "completed_at": "2026-03-17T19:11:27.086Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

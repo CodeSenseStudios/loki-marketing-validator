@@ -1,0 +1,1 @@
+We are collecting early interest, objections, and pricing reactions before code. That feedback changes the roadmap fast. #customerresearch #demandgen #founders

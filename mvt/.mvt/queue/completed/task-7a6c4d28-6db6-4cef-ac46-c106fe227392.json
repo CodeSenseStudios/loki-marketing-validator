@@ -1,0 +1,32 @@
+{
+  "id": "task-7a6c4d28-6db6-4cef-ac46-c106fe227392",
+  "type": "discovery-coach",
+  "swarm": "outbound-validation",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "discovery-coach",
+  "model_tier": "strategy",
+  "title": "Create interview script",
+  "description": "Produce interview script and scoring rubric.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\interview-script.md",
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\outbound\\signal-scoring.md"
+  ],
+  "acceptance_criteria": [
+    "interview script covers all five sections",
+    "signal scoring contains numeric thresholds"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:28.589Z",
+  "started_at": "2026-03-17T19:11:28.622Z",
+  "completed_at": "2026-03-17T19:11:28.734Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}

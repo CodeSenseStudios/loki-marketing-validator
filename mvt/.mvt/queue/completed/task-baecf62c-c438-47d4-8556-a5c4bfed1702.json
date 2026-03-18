@@ -1,0 +1,30 @@
+{
+  "id": "task-baecf62c-c438-47d4-8556-a5c4bfed1702",
+  "type": "ppc-strategist",
+  "swarm": "paid-acquisition",
+  "phase": 2,
+  "priority": "normal",
+  "status": "completed",
+  "assigned_agent": "ppc-strategist",
+  "model_tier": "strategy",
+  "title": "Create Google Ads plan",
+  "description": "Build search and display structure.",
+  "inputs": [],
+  "expected_outputs": [
+    "C:\\Dev\\loki-market\\loki-marketing\\mvt\\.mvt\\output\\ads\\google-plan.md"
+  ],
+  "acceptance_criteria": [
+    "google-plan.md includes campaigns, groups, and keywords"
+  ],
+  "depends_on": [],
+  "blocks": [],
+  "retry_count": 0,
+  "max_retries": 3,
+  "created_at": "2026-03-17T19:11:27.964Z",
+  "started_at": "2026-03-17T19:11:27.981Z",
+  "completed_at": "2026-03-17T19:11:28.050Z",
+  "error_log": [],
+  "tokens_used": 0,
+  "cost_usd": 0,
+  "metadata": {}
+}
